@@ -125,13 +125,13 @@
       letter-spacing: .1rem; }
       
     .footer-20192 .copyright {
-      color: #666873; }
+      color: #dddee4; }
 
     .footer-20192 .cta {
       -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
       box-shadow: -20px -20px 0 0 rgba(64, 52, 52, 0.2);
       padding: 20px;
-      background-color: #ff0000;
+      background-color: #d80b0be8;
       top: -150px;
       position: relative; }
 

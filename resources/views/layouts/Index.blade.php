@@ -8,16 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href={{asset('css/style.css')}} rel="stylesheet">
     <link href={{asset('fontawesome-free-6.5.1-web/css/all.min.css')}} rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar" style="background: #2F3039">
-        <div class="container-fluid d-flex flex-row-reverse me-4">
-          <a href="#" class="navbar-brand mb-0 h1 text-light"><i class="fa-regular fa-circle-user fa-lg mx-1" style="color: #ff0000;"></i>Login</a>
+        <div class="container-fluid d-flex flex-row-reverse me-4" style="font-family: 'Roboto', sans-serif;">
+          <a href="#" class="navbar-brand mb-0 fw-bold  fs-6 text-light"><i class="fa-solid fa-right-to-bracket mx-1" style="color: #ff0000;"></i>Register</a>
+          <a href="#" class="navbar-brand mb-0 fw-bold  fs-6 text-light"><i class="fa-regular fa-circle-user  mx-1" style="color: #ff0000;"></i>Login</a>
+
+           <div class="d-flex flex-row-reverse" style="font-family: 'Roboto', sans-serif;">
+            <a href="#"  class="navbar-brand mb-0 fw-bold  fw-normal fs-6 text-light"><i class="fa-solid fa-location-dot mx-2" style="color: #e61414;"></i>Eastroad Philippines</a>
+            <a href="#"  class="navbar-brand mb-0 fw-bold  fw-normal fs-6 text-light"><i class="fa-regular fa-envelope fa-sm mx-2" style="color: #e61414;"></i>emailko@gmail.com</a>
+            <a href="#"  class="navbar-brand mb-0 fw-bold  fw-normal fs-6 text-light"><i class="fa-solid fa-phone fa-xs mx-2" style="color: #e61414;"></i>+ 1206785</a>
+           </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg" style="background: #15161D">
         <div class="container-fluid" >  
-          <a class="navbar-brand text-left" href="#"><img src="{{asset('image/e-commers.png')}}" alt="Bootstrap" width="200" height="60"></a>
+          <a class="navbar-brand text-left" href="#"><img class="img-fluid" src="{{asset('image/e-commers.png')}}" alt="Bootstrap" width="200" height="60"></a>
             <!-- SEARCH BAR -->
             <div class="col-md-5">
                 <div class="header-search">
@@ -36,15 +46,15 @@
 
              <!-- /Wishlist -->
 			<div class="me-5">
-                <i class="fa-regular fa-heart fa-2xl text-center mx-3" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-heart fa-xl text-center mx-3" style="color: #ffffff;"></i>
                  <!-- /Wishlist -->
                 <!-- Cart -->
-                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
             </div>
             <!-- /Cart -->
         </div>
       </nav>
-      <header class="navbar" style="background: #ff0000" >
+      <header class="navbar" style="background: #d80b0be8" >
         <div class="container" >
         </div>
     </header>
@@ -55,7 +65,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav" style="font-family: 'Roboto', sans-serif;">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link active" aria-current="page" href="#">Hot Deals</a>
               <a class="nav-link active" aria-current="page" href="#">Laptops</a>
