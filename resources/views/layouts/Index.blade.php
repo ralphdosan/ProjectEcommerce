@@ -14,15 +14,14 @@
 </head>
 <body>
     <header class="navbar" style="background: #2F3039">
-        <div class="container-fluid d-flex flex-row-reverse me-4" style="font-family: 'Roboto', sans-serif;">
-          <a href="#" class="navbar-brand mb-0 fw-bold  fs-6 text-light"><i class="fa-solid fa-right-to-bracket mx-1" style="color: #ff0000;"></i>Register</a>
-          <a href="#" class="navbar-brand mb-0 fw-bold  fs-6 text-light"><i class="fa-regular fa-circle-user  mx-1" style="color: #ff0000;"></i>Login</a>
+        <div class="container-fluid d-flex flex-row-reverse" style="font-family: 'Roboto', sans-serif;">
+          <a href="/login" class="navbar-brand mb-0 fw-bold  fs-6 text-light me-5"><i class="fa-regular fa-circle-user  mx-1" style="color: #ff0000;"></i>Login</a>
 
-           <div class="d-flex flex-row-reverse" style="font-family: 'Roboto', sans-serif;">
+          <div class="d-flex-row-reverse" style="font-family: 'Roboto', sans-serif;">
             <a href="#"  class="navbar-brand mb-0 fw-bold  fw-normal fs-6 text-light"><i class="fa-solid fa-location-dot mx-2" style="color: #e61414;"></i>Eastroad Philippines</a>
             <a href="#"  class="navbar-brand mb-0 fw-bold  fw-normal fs-6 text-light"><i class="fa-regular fa-envelope fa-sm mx-2" style="color: #e61414;"></i>emailko@gmail.com</a>
             <a href="#"  class="navbar-brand mb-0 fw-bold  fw-normal fs-6 text-light"><i class="fa-solid fa-phone fa-xs mx-2" style="color: #e61414;"></i>+ 1206785</a>
-           </div>
+          </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg" style="background: #15161D">
@@ -45,7 +44,7 @@
             <!-- SEARCH BAR -->
 
              <!-- /Wishlist -->
-			<div class="me-5">
+			<div class="me-xl-5">
                 <i class="fa-regular fa-heart fa-xl text-center mx-3" style="color: #ffffff;"></i>
                  <!-- /Wishlist -->
                 <!-- Cart -->
@@ -60,28 +59,27 @@
     </header>
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg light-background shadow-lg">
-        <div class="container">
+        <div class="container-fluid mx-3">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse d-flex justify-content-left" id="navbarNavAltMarkup">
             <div class="navbar-nav" style="font-family: 'Roboto', sans-serif;">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link active" aria-current="page" href="#">Hot Deals</a>
               <a class="nav-link active" aria-current="page" href="#">Laptops</a>
               <a class="nav-link active" aria-current="page" href="#">Smartphones</a>
               <a class="nav-link active" aria-current="page" href="#">Cameras</a>
-              <a class="nav-link active" aria-current="page" href="#">Accessories</a>
+              <a class="nav-link active" aria-current="page" href="#">Accessories</a>         
             </div>
           </div>
         </div>
       </nav>
 	<!-- /NAVIGATION -->
-    <header class="navbar" style="background: #2F3039">
-        <div class="container-fluid d-flex flex-row-reverse me-4">
-          <a href="#" class="navbar-brand mb-0 h1 text-light"></a>
-        </div>
-    </header>
+  
+    <!-- Content --->
+
+    @yield('content')
 
     <header class="navbar" style="background: #2F3039">
         <div class="container-fluid d-flex flex-row-reverse me-4">
@@ -98,6 +96,8 @@
           <a href="#" class="navbar-brand mb-0 h1 text-light"></a>
         </div>
     </header>
+
+    <!-- ENDcontent -->
     <!-- Footer -->
     <footer class="footer-20192 ">
         <div class="site-section">
