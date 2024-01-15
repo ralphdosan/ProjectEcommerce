@@ -17,6 +17,9 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    protected $table = 'tbl_eshop_users';
+
     protected $fillable = [
         'name',
         'email',

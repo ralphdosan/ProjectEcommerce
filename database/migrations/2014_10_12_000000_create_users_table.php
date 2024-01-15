@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('tbl_eshop_users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->tinyInteger('role')->default(2);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
